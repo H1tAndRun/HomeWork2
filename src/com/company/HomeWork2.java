@@ -17,11 +17,13 @@ public class HomeWork2 {
     public static void Exercise1(){
         double increment=0.01123;
         double result=0;
+        int x=0;
 
         if (increment<0){
             System.out.println("Число отрицаительное");
         }else {
-            for (double i=0; i <1000000 ; i+=increment) {
+            while (x<1000000){
+                x+=increment;
                 result++;
             }
             System.out.println((int)result);
@@ -44,7 +46,7 @@ public class HomeWork2 {
         boolean hasMotorProblem = true;
         boolean hasTransmissionProblem = false;
         boolean hasWheelsProblem = false;
-        int price=0;
+       double price=0;
         int BreakdownCounter=0;
         if (!hasFuel&&!hasElectricsProblem&&!hasMotorProblem&&!hasTransmissionProblem&&!hasWheelsProblem) {
             price = +1000;
