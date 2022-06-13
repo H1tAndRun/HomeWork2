@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class HomeWork2 {
 
     public static void main(String[] args) {
-        Exercise1();
+      /*  Exercise1();
         Exercise2();
-        Exercise3();
+        Exercise3();*/
         Exercise4();
 
     }
@@ -17,7 +17,7 @@ public class HomeWork2 {
     public static void Exercise1(){
         double increment=0.01123;
         double result=0;
-        int x=0;
+        double x=0;
 
         if (increment<0){
             System.out.println("Число отрицаительное");
@@ -90,22 +90,23 @@ public class HomeWork2 {
     }
 
     public static void Exercise4(){
+        Stock stock=new Stock();
         Employee employee1=new Employee();
-        employee1.SmashVodka(5);
+        employee1.SmashVodka(5,stock);
         System.out.println("Работник 1 разбил "+employee1.getSmashInfo()+ "штук");
-        System.out.println("На складе "+Stock.GetProduct()+"\n");
+        System.out.println("На складе "+stock.GetProduct()+"\n");
 
 
         Employee employee2=new Employee();
-        employee2.SmashVodka(10);
+        employee2.SmashVodka(10,stock);
         System.out.println("Работник 2 разбил "+employee2.getSmashInfo()+ "штук");
-        System.out.println("На складе "+Stock.GetProduct()+"\n");
+        System.out.println("На складе "+stock.GetProduct()+"\n");
 
 
         Employee employee3=new Employee();
-        employee3.SmashVodka(1000);
+        employee3.SmashVodka(1000,stock);
         System.out.println("Работник 3 разбил "+employee3.getSmashInfo()+ "штук");
-        System.out.println("На складе "+Stock.GetProduct()+"\n");
+        System.out.println("На складе "+stock.GetProduct()+"\n");
 
 
 

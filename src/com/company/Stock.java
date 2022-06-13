@@ -4,11 +4,11 @@ public class Stock {
 
   private static int product =10000;
 
-  public static int GetProduct(){
+  public  int GetProduct(){
       return product;
   }
-  public void CountProduct(int x){
-      product-=x;
+  public void setProduct(int product){
+      this.product=product;
   }
 
 
